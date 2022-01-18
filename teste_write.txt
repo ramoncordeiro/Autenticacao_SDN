@@ -1,0 +1,7 @@
+
+TESTE ESCREVER1
+TESTE ESCREVER2
+1
+2 ip:  tempo
+2 ip:  tempo
+315 ip:  tempo

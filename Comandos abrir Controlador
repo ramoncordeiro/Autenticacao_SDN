@@ -1,0 +1,38 @@
+##### Unico
+~/pox/pox.py --verbose forwarding.controlador_autenticacao_v_pox misc.full_payload
+
+
+
+### Multiplos (mudar a porta)
+~/pox/pox.py --verbose forwarding.controlador_autenticacao_multi openflow.of_01 --port=6635  
+
+
+(comando abaixo para ter full payload)
+
+~/pox/pox.py --verbose forwarding.controlador_autenticacao_multi openflow.of_01 --port=6638 misc.full_payload  
+
+~/pox/pox.py --verbose forwarding.controlador_autenticacao_multi openflow.of_01 --port=6635 misc.full_payload  
+
+
+
+3 problemas preciso resolver:
+ - Bug no controlador quando chamo 2 clientes. (OK)
+ - Cliente receber a mensagem final de computacao do controlador
+ - Computacao final pelo controlador dar 1 (- parcial)
+ - Rodar teste automatizado, vários xterms executando ao mesmo tempo (OK)
+
+ 
+ [2,3,5] ou [2,3,4]
+
+ 
+ 
+ Dia (01/01/2018): Rodei novamente o codigo (dessa vez automatizado) e no calculo de 'MENSAGEM FINAL COMPUTADA m_pet_int:  1' ( DEU 1)
+ Foram escolhidos os autenticadores [5,2,4] (Nessa ordem)
+ forwarding.controlador_autenticacao_multiThread (usando)
+
+ 
+ NOVAMENTE (SEGUNDA VEZ)!
+ 
+ Dia (01/01/2018): Rodei novamente o codigo (dessa vez automatizado) e no calculo de 'MENSAGEM FINAL COMPUTADA m_pet_int:  1' ( DEU 1)
+ Foram escolhidos os autenticadores [5,4,2] (Nessa ordem FOI FEITO SYN-ACK COM AUT)  **** a ORDEM MUDOU, MAS ERAM OS MESMOS AUTENTICADORES
+ forwarding.controlador_autenticacao_multiThread (usando)
