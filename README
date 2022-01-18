@@ -1,0 +1,8 @@
+### Este repositorio contem software de autenticação de usuarios em Redes Definidas por software.
+
+## Tecnologias Utilizadas:
+ - COntrolador SDN POX;
+ - Python 2.7;
+ - Criptografia de Shamir;
+ - Sistema criptgrafico de Lagrange;
+ - Simulador Mininet
